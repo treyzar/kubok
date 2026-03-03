@@ -76,6 +76,11 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
 }
 
+/* Hide Leaflet logo/attribution */
+.leaflet-control-attribution {
+  display: none !important;
+}
+
 /* Animations */
 @keyframes float {
   0% { transform: translateY(0px) rotate(0deg); }
