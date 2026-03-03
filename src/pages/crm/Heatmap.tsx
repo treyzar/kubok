@@ -229,9 +229,10 @@ export default function Heatmap() {
                   zoom={13}
                   style={{ height: '100%', width: '100%', minHeight: '500px' }}
                   className="z-0 rounded-2xl"
+                  attributionControl={false}
+                  zoomControl={true}
                 >
                   <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                     url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
                   />
                   <HeatLayer points={heatPoints} />
